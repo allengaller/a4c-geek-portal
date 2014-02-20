@@ -1,0 +1,27 @@
+.navbar-header{
+	height: 65px;
+}
+
+.search{
+	margin-top: 20px;
+}
+
+.more{
+	margin-top: 12px;
+}
+
+.container {
+	width:1280px;
+}
+
+.block-left {
+	width:558px;
+	float:left;
+	margin-left:35px
+}
+
+.block-right {
+	width:558px;
+	float:left; 
+	margin-left:55px;
+}
