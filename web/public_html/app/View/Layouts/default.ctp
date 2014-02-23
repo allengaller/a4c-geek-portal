@@ -13,8 +13,8 @@
     <!--script src="js/less-1.3.3.min.js"></script-->
     <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -28,9 +28,9 @@
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/scripts.js"></script>
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 					 	<img border="0" src="/img/logo.png" alt="Logo">  Geek Portal
 					 </a>
 				</div>
-				
+
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right more">
 						<!--<li>
@@ -78,7 +78,7 @@
 						<button type="submit" class="btn btn-default">Search</button>
 					</form>
 
-				</div>				
+				</div>
 			</nav>
 
 			<div class="tabbable" id="tabs-709338">
@@ -162,7 +162,7 @@
 						  		<a href="http://news.sohu.com/">Sohu</a> &nbsp&nbsp&nbsp&nbsp
 						  		<a href="http://news.qq.com">Tencent</a> &nbsp&nbsp&nbsp&nbsp
 						      	<a href="http://news.ifeng.com/">iFeng</a> &nbsp&nbsp&nbsp&nbsp
-						      	
+
 						  </div>
 						</div>
 
@@ -326,6 +326,6 @@
 	</div>
     </div>
 </div>
-    
+
 </body>
 </html>
