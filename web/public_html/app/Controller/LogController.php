@@ -2,11 +2,11 @@
 App::uses('AppController', 'Controller');
 
 /**
- * Segment Controller
+ * Log Controller
  */
-class SegmentController extends AppController {
+class LogController extends AppController {
 
 	public $components = array('Paginator', 'Log');
-
+    public $helpers = array('Html');
     
 }

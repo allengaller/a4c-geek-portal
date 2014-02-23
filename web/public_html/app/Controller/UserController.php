@@ -2,21 +2,14 @@
 App::uses('AppController', 'Controller');
 
 /**
- * Block Controller
+ * User Controller
  */
-class BlockController extends AppController {
+class UserController extends AppController {
 
-    /**
-     * Components
-     *
-     * @var array
-     */
 	public $components = array('Paginator', 'Log');
 
     /**
      * index method
-     *
-     * @return void
      */
 	public function index() {
 		$this->Block->recursive = 0;
@@ -51,12 +44,12 @@ class BlockController extends AppController {
 			if ($this->Block->save($this->request->data)) {
 				$this->Session->setFlash(__('添加客户成功!'));
                 $this->Log->add('system',array(
-							'user_id'=>'1',  //账号ID
-							'op_id'=>'1',    //操作账号ID
-							'account'=>'',   //操作账号
-							'name'=>'',       //操作账号姓名
-							'remark'=>'123',     //备注
-                            'creted'=>''     //日志创建时间
+							'user_id'=>'1',
+							'op_id'=>'1',
+							'account'=>'',
+							'name'=>'',
+							'remark'=>'123',
+                            'creted'=>''
                 ));
                 
                 

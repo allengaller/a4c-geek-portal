@@ -11,17 +11,17 @@
 }
 
 .container {
-	width:1280px;
+	width:100%;
 }
 
 .block-left {
-	width:558px;
+	width:550px;
 	float:left;
-	margin-left:35px
+	margin-left:18px
 }
 
 .block-right {
-	width:558px;
+	width:550px;
 	float:left; 
-	margin-left:55px;
+	margin-left:18px;
 }
