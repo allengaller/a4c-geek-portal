@@ -8,14 +8,12 @@ class MainController extends AppController {
 
 	public $components = array('Paginator', 'Log');
     public $helpers = array('Html');
-    public $layout = "login";
+    public $layout = "default";
     
     public function index() {
         if(is_numeric($this->Session->read('user.id'))) {
            $this->redirect(array('action'=>'home'));
-        } else {
-            $this->redirect('/');
-        }
+        } 
     }
     
     
@@ -26,11 +24,12 @@ class MainController extends AppController {
 	public function home() {
         $this->loadModel('User');
         $this->loadModel('UserDetail');
-        echo '123';exit;
+        
         //$userId = $this->Session->read('user.id'];
         
-        $this->set('user', $this->User->findById($userId));
-        $this->set('userDetail', $this->UserDetail->findById($userId));
+        //$this->set('user', $this->User->findById($userId));
+        //$this->set('userDetail', $this->UserDetail->findById($userId));
+        $this->layout('Main.home');
 	}
     
     /**
@@ -85,10 +84,8 @@ class MainController extends AppController {
                 $this->Session->setFlash('Wrong Account Dude!');
                 $this->redirect('/');  
             }
-        } else {
-            echo 'get login';
-        }
-        
+        } 
+        $this->redirect(array('action'=>'home'));
 	}
     
     /**
