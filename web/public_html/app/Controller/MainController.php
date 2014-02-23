@@ -9,14 +9,14 @@ class MainController extends AppController {
 	public $components = array('Paginator', 'Log');
     public $helpers = array('Html');
     public $layout = "default";
-    
+
     public function index() {
         if(is_numeric($this->Session->read('user.id'))) {
            $this->redirect(array('action'=>'home'));
-        } 
+        }
     }
-    
-    
+
+
     /**
      * home method
      * For logged-in user.
@@ -24,14 +24,13 @@ class MainController extends AppController {
 	public function home() {
         $this->loadModel('User');
         $this->loadModel('UserDetail');
-        
+
         //$userId = $this->Session->read('user.id'];
-        
+
         //$this->set('user', $this->User->findById($userId));
         //$this->set('userDetail', $this->UserDetail->findById($userId));
-        $this->layout('Main.home');
 	}
-    
+
     /**
      * login method
      */
@@ -39,12 +38,12 @@ class MainController extends AppController {
         if(is_numeric($this->Session->read('user.id'))) {
             $this->redirect(array('action'=>'home'));
         }
-        
+
         if($this->request->is('post')) {
             $uname = $this->request->data('uname');
             $pwd = $this->request->data('pwd');
             //$captcha = $this->request->data('captcha'); //TODO
-            
+
             if(empty($uname) || $empty($pwd)) {
                 $this->Session->setFlash('Dude you need to input your user name and password!');
                 $this->redirect('/');
@@ -59,7 +58,7 @@ class MainController extends AppController {
                     $this->Session->setFlash('Dude this account is deleted!');
                     $this->redirect('/');
                 }
-                
+
                 //Account and Passowrd Check
                 if(CommonLib::EncryptPassword($pwd) != $user['User']['pwd']) {
                     $this->Session->setFlash('Dude you got the wrong password!');
@@ -70,7 +69,7 @@ class MainController extends AppController {
                     unset($userSession['pwd']);
                     CakeSession::write('user', $userSession);
                     $this->Session->setFlash('Dude You Got In!');
-                    
+
                     //Logging
                     $this->Log->add('login', array(
                         'uid' => $userSession['id'],
@@ -82,17 +81,17 @@ class MainController extends AppController {
                 }
             } else {
                 $this->Session->setFlash('Wrong Account Dude!');
-                $this->redirect('/');  
+                $this->redirect('/');
             }
-        } 
+        }
         $this->redirect(array('action'=>'home'));
 	}
-    
+
     /**
      * logout method
      */
 	public function logout() {
 	}
 
-    
+
 }
