@@ -14,6 +14,21 @@ class MainController extends AppController {
         if(is_numeric($this->Session->read('user.id'))) {
            $this->redirect(array('action'=>'home'));
         }
+
+        $this->loadModel('Segment');
+        $this->loadModel('Block');
+        $this->loadModel('BlockItem');
+
+        $this->set('segments', $this->Segment->find('all'));
+        $this->set('blocks', $this->Block->find('all'));
+
+        $blockItemsRaw = $this->BlockItem->find('all');
+        $blockItems = array();
+        foreach ($blockItemsRaw as $key => $val) {
+            $blockItems[$val['BlockItem']['block_id']][] = $val;
+        }
+        $this->set('blockItems', $blockItems);
+        //debug($this->Segment->find('all'));exit;
     }
 
 
@@ -83,8 +98,10 @@ class MainController extends AppController {
                 $this->Session->setFlash('Wrong Account Dude!');
                 $this->redirect('/');
             }
+        } else {
+            //$this->redirect(array('action'=>'home'));
+            echo '123';
         }
-        $this->redirect(array('action'=>'home'));
 	}
 
     /**
@@ -95,3 +112,4 @@ class MainController extends AppController {
 
 
 }
+
