@@ -11,6 +11,7 @@ class MainController extends AppController {
     public $layout = "default";
 
     public function index() {
+        echo 'main';
         if(is_numeric($this->Session->read('user.id'))) {
            $this->redirect(array('action'=>'home'));
         }
@@ -27,8 +28,7 @@ class MainController extends AppController {
         foreach ($blockItemsRaw as $key => $val) {
             $blockItems[$val['BlockItem']['block_id']][] = $val;
         }
-        $this->set('blockItems', $blockItems);
-        //debug($this->Segment->find('all'));exit;
+        $this->set('blockItems', $blockItems);       
     }
 
 

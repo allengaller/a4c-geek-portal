@@ -1,4 +1,4 @@
-
+default
 <?php echo $this->element('header')?>
 
 <body>
@@ -8,10 +8,10 @@
 			<?php echo $this->element('nav');?>
 
 			<div class="tabbable" id="portal-box">
-				<?php echo $this->element('segment');?>	
+				<?php echo $this->element('segment', array('segments' => $segments));?>	
 				
 				<div class="tab-content">
-					<?php echo $this->element('block');?>
+					<?php echo $this->element('block', array('blocks' => $blocks));?>
 				</div>
 			</div>
 		</div>
