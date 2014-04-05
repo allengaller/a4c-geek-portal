@@ -15,4 +15,15 @@ class User extends AppModel {
         '2' => 'Locked',
         '3' => 'Deleted'
     );
+//    public $validate = array(
+//        'name' => array(
+//            'rule' => 'isUnique',
+//            'allowEmpty' => false,
+//            'message' => 'Your name should be unique!'
+//        ),
+//        'pwd' => array(
+//            'rule' => 'notEmpty',
+//            'message' => 'Password needed!'
+//        )
+//    );
 }
