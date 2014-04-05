@@ -22,7 +22,44 @@
     <favorites_list name="web" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="42" selection-start="10474" selection-end="10474" vertical-scroll-proportion="-35.51852" vertical-offset="2515" max-vertical-offset="6192">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/Controller/AboutController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/app/Controller/MainController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/about.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="16" selection-start="29" selection-end="29" vertical-scroll-proportion="0.020408163" vertical-offset="0" max-vertical-offset="882">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -49,12 +86,12 @@
         <option value="$PROJECT_DIR$/public_html/app/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/public_html/app/Config/database.php" />
         <option value="$PROJECT_DIR$/public_html/app/Config/core.php" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/public_html/app/Config/routes.php" />
         <option value="$PROJECT_DIR$/public_html/app/View/About/index.ctp" />
         <option value="$PROJECT_DIR$/public_html/app/View/Layouts/about.ctp" />
-        <option value="$PROJECT_DIR$/public_html/app/Controller/AboutController.php" />
         <option value="$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp" />
+        <option value="$PROJECT_DIR$/public_html/app/Controller/AboutController.php" />
+        <option value="$PROJECT_DIR$/public_html/app/Controller/MainController.php" />
       </list>
     </option>
   </component>
@@ -329,7 +366,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1688" height="1030" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -337,7 +374,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20654762" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20654762" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -539,20 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/about.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="126">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/AboutController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="396">
@@ -574,16 +597,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/Controller/AboutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/default.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="7519" selection-end="7519" vertical-scroll-proportion="-5.5185184" vertical-offset="2461" max-vertical-offset="6192">
+        <state line="193" column="42" selection-start="10474" selection-end="10474" vertical-scroll-proportion="-35.51852" vertical-offset="2515" max-vertical-offset="6192">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/app/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="1201" selection-end="1204" vertical-scroll-proportion="0.67346936" vertical-offset="0" max-vertical-offset="882">
+        <state line="21" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/app/View/Layouts/about.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="29" selection-end="29" vertical-scroll-proportion="0.020408163" vertical-offset="0" max-vertical-offset="882">
           <folding />
         </state>
       </provider>

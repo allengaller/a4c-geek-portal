@@ -19,8 +19,7 @@ class MainController extends AppController {
         $this->loadModel('Segment');
         $this->loadModel('Block');
         $this->loadModel('BlockItem');
-        //debug($this->Segment->find('all'));
-        $this->set('s', $this->Segment->find('all'));
+
         $this->set('mainBlocks', $this->Block->find('all', array('conditions'=>array('main'=>1))));
         $this->set('blocks', $this->Block->find('all', array('conditions'=>array('main'=>0))));
 
